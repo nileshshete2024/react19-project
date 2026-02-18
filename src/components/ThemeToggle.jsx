@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Moon, Sun } from "lucide-react";
 
+
 const ThemeToggle = () => {
   const [isDark, setIsDark] = useState(() => {
     if (typeof window !== "undefined") {
@@ -21,6 +22,7 @@ const ThemeToggle = () => {
     }
   }, [isDark]);
 
+  
   return (
     <button
       onClick={() => setIsDark(!isDark)}
