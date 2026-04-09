@@ -11,7 +11,6 @@ const ThemeToggle = () => {
     return false;
   });
 
-  
   useEffect(() => {
     if (isDark) {
       document.documentElement.classList.add("dark");
